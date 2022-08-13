@@ -12,6 +12,7 @@ namespace Logical_Programs
             Console.WriteLine("Press 2 for Perfect Number");
             Console.WriteLine("Press 3 for Prime Number");
             Console.WriteLine("Press 4 for Prime Number");
+            Console.WriteLine("Press 5 for Coupon Numbers");
 
             int valueGet = Convert.ToInt32(Console.ReadLine());
             
@@ -28,6 +29,9 @@ namespace Logical_Programs
                     break;
                 case 4:
                     ReversNumber reversNumber = new ReversNumber();
+                    break;
+                case 5:
+                    CouponNumber couponNumber = new CouponNumber();
                     break;
             }
         }
