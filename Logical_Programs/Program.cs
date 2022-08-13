@@ -13,6 +13,7 @@ namespace Logical_Programs
             Console.WriteLine("Press 3 for Prime Number");
             Console.WriteLine("Press 4 for Prime Number");
             Console.WriteLine("Press 5 for Coupon Numbers");
+            Console.WriteLine("Press 6 for Stopwatch ");
 
             int valueGet = Convert.ToInt32(Console.ReadLine());
             
@@ -32,6 +33,9 @@ namespace Logical_Programs
                     break;
                 case 5:
                     CouponNumber couponNumber = new CouponNumber();
+                    break;
+                case 6:
+                    StopWatch stopwatch = new StopWatch();
                     break;
             }
         }
