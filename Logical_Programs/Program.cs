@@ -9,6 +9,7 @@ namespace Logical_Programs
             Console.WriteLine("Wellcome To Logical Problem Series");
             Console.WriteLine("Please Enter the Number Which Program you want to Perform");
             Console.WriteLine("Press 1 for Fibonacci");
+            Console.WriteLine("Press 2 for Perfect Number");
 
             int valueGet = Convert.ToInt32(Console.ReadLine());
             
@@ -16,6 +17,9 @@ namespace Logical_Programs
             {
                 case 1:
                     FibonacciSeries fibonacci = new FibonacciSeries();
+                    break;
+                case 2:
+                    PerfectNumber perfectNumber = new PerfectNumber();
                     break;
             }
         }

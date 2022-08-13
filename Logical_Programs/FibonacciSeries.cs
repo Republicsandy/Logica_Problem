@@ -10,18 +10,25 @@ namespace Logical_Programs
     {
         public FibonacciSeries()
         {
-            Console.WriteLine("Enter number for finding the series");
+            int firstNumber = 0, secondNumber = 1, nextNumber , counterValue = 2, rangeOFNumber;
 
-            int number =Convert.ToInt32(Console.ReadLine());
-            int valueInFirstNumber = 0, valueInSecondNumber = 1, valueInThirdNumber = 2;
-            
-            for (int i = 0; i < number; i++)
+            Console.WriteLine("Please Enter Range of Fibonacci series:");
+            rangeOFNumber = Convert.ToInt32(Console.ReadLine());
+            if(rangeOFNumber < 2)
             {
-                Console.WriteLine(valueInFirstNumber + " ");
+                Console.WriteLine("Please enter a number greater than 2");
+            }else{
+                Console.WriteLine(firstNumber + " " + secondNumber + " ");
+                while (counterValue <= rangeOFNumber)
+                {
+                    nextNumber = firstNumber + secondNumber;
+                    Console.WriteLine("Range of numbers are" + " " + nextNumber );
+                    firstNumber = secondNumber;
+                    secondNumber = nextNumber;
 
-                valueInThirdNumber = valueInFirstNumber + valueInSecondNumber;
-                valueInFirstNumber = valueInSecondNumber;
-                valueInSecondNumber = valueInThirdNumber;
+                    counterValue++;
+
+                }
             }
         }
     }
