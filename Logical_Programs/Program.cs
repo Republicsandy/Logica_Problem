@@ -10,6 +10,7 @@ namespace Logical_Programs
             Console.WriteLine("Please Enter the Number Which Program you want to Perform");
             Console.WriteLine("Press 1 for Fibonacci");
             Console.WriteLine("Press 2 for Perfect Number");
+            Console.WriteLine("Press 2 for Prime Number");
 
             int valueGet = Convert.ToInt32(Console.ReadLine());
             
@@ -20,6 +21,9 @@ namespace Logical_Programs
                     break;
                 case 2:
                     PerfectNumber perfectNumber = new PerfectNumber();
+                    break;
+                case 3:
+                    PrimeNumber primeNumber = new PrimeNumber();
                     break;
             }
         }
